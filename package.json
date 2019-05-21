@@ -12,7 +12,8 @@
 	"repository": "github:samuelmeuli/eslint-config",
 	"license": "MIT",
 	"scripts": {
-		"format": "prettier --write"
+		"format": "prettier --write",
+		"release": "np"
 	},
 	"peerDependencies": {
 		"eslint": "^5.0.0",
@@ -21,6 +22,7 @@
 	"devDependencies": {
 		"husky": "^1.1.2",
 		"lint-staged": "^8.1.0",
+		"np": "^5.0.2",
 		"prettier": "^1.15.3"
 	},
 	"files": [
