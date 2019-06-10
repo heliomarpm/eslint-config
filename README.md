@@ -31,9 +31,6 @@ extends:
   - "prettier"
   # If you are using TypeScript and Prettier, also add the following line:
   - "prettier/@typescript-eslint"
-
-env:
-  browser: true
 ```
 
 3. Add a linting script to your `package.json` file:
@@ -77,10 +74,6 @@ extends:
   - "prettier"
   # If you are using TypeScript and Prettier, also add the following line:
   - "prettier/@typescript-eslint"
-
-env:
-  browser: true
-  node: true
 ```
 
 3. Add a linting script to your `package.json` file:
