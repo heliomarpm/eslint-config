@@ -12,6 +12,9 @@ yarn add --dev @samuelmeuli/eslint-config
 
 # If you are using TypeScript, also run the following:
 yarn add --dev @typescript-eslint/eslint-plugin @typescript-eslint/parser
+
+# If you are using Prettier, also run the following:
+yarn add --dev eslint-config-prettier
 ```
 
 2. Create a `.eslintrc.yml` file with the following content in your project root:
@@ -23,6 +26,11 @@ extends:
   - "@samuelmeuli/eslint-config/base"
   # OR
   - "@samuelmeuli/eslint-config/base-typescript"
+
+  # If you are using Prettier, also add the following line:
+  - "prettier"
+  # If you are using TypeScript and Prettier, also add the following line:
+  - "prettier/@typescript-eslint"
 
 env:
   browser: true
@@ -50,6 +58,9 @@ yarn add --dev @samuelmeuli/eslint-config
 
 # If you are using TypeScript, also run the following:
 yarn add --dev @typescript-eslint/eslint-plugin @typescript-eslint/parser
+
+# If you are using Prettier, also run the following:
+yarn add --dev eslint-config-prettier
 ```
 
 2. Create a `.eslintrc.yml` file with the following content in your project root:
@@ -61,6 +72,11 @@ extends:
   - "@samuelmeuli/eslint-config/react"
   # OR
   - "@samuelmeuli/eslint-config/react-typescript"
+
+  # If you are using Prettier, also add the following line:
+  - "prettier"
+  # If you are using TypeScript and Prettier, also add the following line:
+  - "prettier/@typescript-eslint"
 
 env:
   browser: true
