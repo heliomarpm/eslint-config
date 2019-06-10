@@ -38,9 +38,9 @@ extends:
 ```js
 {
   "scripts": {
-    "lint:js": "eslint --fix .",
+    "lint:js": "eslint --fix --max-warnings 0 .",
     // OR
-    "lint:ts": "eslint --ext .ts --fix ."
+    "lint:ts": "eslint --ext .ts --fix --max-warnings 0 ."
   }
 }
 ```
@@ -81,9 +81,9 @@ extends:
 ```js
 {
   "scripts": {
-    "lint:js": "eslint --ext .js,.jsx --fix .",
+    "lint:js": "eslint --ext .js,.jsx --fix --max-warnings 0 .",
     // OR
-    "lint:ts": "eslint --ext .ts,.tsx --fix ."
+    "lint:ts": "eslint --ext .ts,.tsx --fix --max-warnings 0 ."
   }
 }
 ```
