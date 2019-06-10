@@ -8,7 +8,7 @@ These are my personal configurations for [ESLint](https://github.com/eslint/esli
 
 ```sh
 npx install-peerdeps --dev eslint-config-airbnb-base
-yarn add --dev --tilde @samuelmeuli/eslint-config
+yarn add --dev @samuelmeuli/eslint-config
 
 # If you are using TypeScript, also run the following:
 yarn add --dev @typescript-eslint/eslint-plugin @typescript-eslint/parser
@@ -46,7 +46,7 @@ env:
 
 ```sh
 npx install-peerdeps --dev eslint-config-airbnb
-yarn add --dev --tilde @samuelmeuli/eslint-config
+yarn add --dev @samuelmeuli/eslint-config
 
 # If you are using TypeScript, also run the following:
 yarn add --dev @typescript-eslint/eslint-plugin @typescript-eslint/parser
