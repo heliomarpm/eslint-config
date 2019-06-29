@@ -1,5 +1,5 @@
 const jsExtensions = [".js", ".jsx"];
-const tsExtensions = [".ts", ".tsx"];
+const tsExtensions = [".ts", ".tsx", ".d.ts"];
 const allExtensions = jsExtensions.concat(tsExtensions);
 
 // TODO Remove and use eslint-plugin-import's TypeScript configuration once the module supports
