@@ -18,6 +18,9 @@ module.exports = {
 	// Require <button> to have "type" attribute (prevents unintended form submissions)
 	"react/button-has-type": "error",
 
+	// Allow JSX props spreading
+	"react/jsx-props-no-spreading": "off",
+
 	// Sort PropTypes alphabetically
 	"react/jsx-sort-default-props": "error",
 	"react/sort-prop-types": "error",

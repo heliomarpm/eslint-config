@@ -1,4 +1,7 @@
 module.exports = {
+	// Allow `@tsignore`
+	"@typescript-eslint/ban-ts-ignore": "off",
+
 	// Do not make accessibility modifiers (public/package/private) mandatory
 	"@typescript-eslint/explicit-member-accessibility": "off",
 

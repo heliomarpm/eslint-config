@@ -11,7 +11,11 @@ checkDependencies([
 
 module.exports = {
 	parser: "@typescript-eslint/parser",
-	extends: ["airbnb-base", "plugin:@typescript-eslint/recommended", "plugin:import/typescript"],
+	extends: [
+		"eslint-config-airbnb-base",
+		"plugin:@typescript-eslint/recommended",
+		"plugin:import/typescript",
+	],
 	plugins: ["eslint-plugin-simple-import-sort"],
 	rules: {
 		...baseRules,
