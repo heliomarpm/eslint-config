@@ -1,6 +1,5 @@
 const baseRules = require("./rules/base");
 const typescriptRules = require("./rules/typescript");
-const typescriptSettings = require("./settings/typescript");
 const checkDependencies = require("./utils/checkDependencies");
 
 checkDependencies([
@@ -11,12 +10,9 @@ checkDependencies([
 
 module.exports = {
 	parser: "@typescript-eslint/parser",
-	extends: ["airbnb-base", "plugin:@typescript-eslint/recommended"],
+	extends: ["airbnb-base", "plugin:@typescript-eslint/recommended", "plugin:import/typescript"],
 	rules: {
 		...baseRules,
 		...typescriptRules,
-	},
-	settings: {
-		...typescriptSettings,
 	},
 };
