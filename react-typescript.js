@@ -5,6 +5,7 @@ const checkDependencies = require("./utils/checkDependencies");
 
 checkDependencies([
 	"eslint-config-airbnb",
+	"eslint-plugin-simple-import-sort",
 	"@typescript-eslint/eslint-plugin",
 	"@typescript-eslint/parser",
 ]);
@@ -12,6 +13,7 @@ checkDependencies([
 module.exports = {
 	parser: "@typescript-eslint/parser",
 	extends: ["airbnb", "plugin:@typescript-eslint/recommended", "plugin:import/typescript"],
+	plugins: ["eslint-plugin-simple-import-sort"],
 	rules: {
 		...baseRules,
 		...reactRules,
