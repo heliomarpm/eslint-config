@@ -15,20 +15,6 @@
 	},
 	"repository": "github:samuelmeuli/eslint-config",
 	"license": "MIT",
-	"scripts": {
-		"format": "prettier --write",
-		"release": "np"
-	},
-	"peerDependencies": {
-		"eslint": "^5.0.0 || ^6.0.0",
-		"eslint-plugin-import": "^2.0.0"
-	},
-	"devDependencies": {
-		"husky": "^3.0.3",
-		"lint-staged": "^9.2.1",
-		"np": "^5.0.3",
-		"prettier": "^1.18.2"
-	},
 	"files": [
 		"rules/",
 		"settings/",
@@ -38,15 +24,30 @@
 		"react.js",
 		"react-typescript.js"
 	],
-	"husky": {
-		"hooks": {
-			"pre-commit": "lint-staged"
-		}
+	"scripts": {
+		"format": "prettier --write",
+		"release": "np"
+	},
+	"dependencies": {},
+	"peerDependencies": {
+		"eslint": "^6.0.0",
+		"eslint-plugin-import": "^2.0.0"
+	},
+	"devDependencies": {
+		"husky": "^3.0.3",
+		"lint-staged": "^9.2.1",
+		"np": "^5.0.3",
+		"prettier": "^1.18.2"
 	},
 	"lint-staged": {
 		"*.{js,json,md,yml}": [
 			"yarn format",
 			"git add"
 		]
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "lint-staged"
+		}
 	}
 }
