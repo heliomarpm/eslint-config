@@ -31,7 +31,8 @@
 	"dependencies": {},
 	"peerDependencies": {
 		"eslint": "^6.0.0",
-		"eslint-plugin-import": "^2.0.0"
+		"eslint-plugin-import": "^2.0.0",
+		"eslint-plugin-simple-import-sort": "^4.0.0"
 	},
 	"devDependencies": {
 		"husky": "^3.0.3",
