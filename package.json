@@ -17,12 +17,10 @@
 	"license": "MIT",
 	"files": [
 		"rules/",
-		"settings/",
-		"utils/",
-		"base.js",
-		"base-typescript.js",
+		"index.js",
 		"react.js",
-		"react-typescript.js"
+		"typescript.js",
+		"typescript-react.js"
 	],
 	"scripts": {
 		"format": "prettier --write",

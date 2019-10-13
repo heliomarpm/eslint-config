@@ -2,88 +2,145 @@
 
 These are my personal configurations for [ESLint](https://github.com/eslint/eslint). They are based on [Airbnb's ESLint configurations](https://github.com/airbnb/javascript).
 
-## Base configuration
+## Overview
 
-1. Install the required packages:
+This repository contains ESLint configurations for the following setups:
 
-```sh
-npx install-peerdeps --dev eslint-config-airbnb-base
-yarn add --dev @samuelmeuli/eslint-config eslint-plugin-simple-import-sort
+- JavaScript
+- JavaScript with React
+- TypeScript
+- TypeScript with React
 
-# If you are using TypeScript, also run the following:
-yarn add --dev @typescript-eslint/eslint-plugin @typescript-eslint/parser
+They are designed to be used together with [Prettier](https://github.com/prettier/prettier).
 
-# If you are using Prettier, also run the following:
-yarn add --dev eslint-config-prettier
-```
+## Usage
 
-2. Create a `.eslintrc.yml` file with the following content in your project root:
+1. **Install the required packages:**
 
-```yml
-root: true
+   - JavaScript:
 
-extends:
-  - "@samuelmeuli/eslint-config/base"
-  # OR
-  - "@samuelmeuli/eslint-config/base-typescript"
+     ```sh
+     yarn add --dev @samuelmeuli/eslint-config \
+       eslint-config-prettier \
+       eslint-plugin-simple-import-sort \
+       && npx install-peerdeps --dev eslint-config-airbnb-base
+     ```
 
-  # If you are using Prettier, also add the following line:
-  - "prettier"
-  # If you are using TypeScript and Prettier, also add the following line:
-  - "prettier/@typescript-eslint"
-```
+   - JavaScript with React:
 
-3. Add a linting script to your `package.json` file:
+     ```sh
+     yarn add --dev @samuelmeuli/eslint-config \
+       eslint-config-prettier \
+       eslint-plugin-simple-import-sort \
+       && npx install-peerdeps --dev eslint-config-airbnb
+     ```
 
-```js
-{
-  "scripts": {
-    "lint:js": "eslint --fix --max-warnings 0 .",
-    // OR
-    "lint:ts": "eslint --ext .ts --fix --max-warnings 0 ."
-  }
-}
-```
+   - TypeScript:
 
-## React configuration
+     ```sh
+     yarn add --dev @samuelmeuli/eslint-config \
+       eslint-config-prettier \
+       @typescript-eslint/eslint-plugin \
+       @typescript-eslint/parser \
+       eslint-plugin-simple-import-sort \
+       && npx install-peerdeps --dev eslint-config-airbnb-base
+     ```
 
-1. Install the required packages:
+   - TypeScript with React:
 
-```sh
-npx install-peerdeps --dev eslint-config-airbnb
-yarn add --dev @samuelmeuli/eslint-config eslint-plugin-simple-import-sort
+     ```sh
+     yarn add --dev @samuelmeuli/eslint-config \
+       eslint-config-prettier \
+       @typescript-eslint/eslint-plugin \
+       @typescript-eslint/parser \
+       eslint-plugin-simple-import-sort \
+       && npx install-peerdeps --dev eslint-config-airbnb
+     ```
 
-# If you are using TypeScript, also run the following:
-yarn add --dev @typescript-eslint/eslint-plugin @typescript-eslint/parser
+2. **Create the following entry in your `package.json` file:**
 
-# If you are using Prettier, also run the following:
-yarn add --dev eslint-config-prettier
-```
+   - JavaScript:
 
-2. Create a `.eslintrc.yml` file with the following content in your project root:
+     ```json
+     {
+       "eslintConfig": {
+         "root": true,
+         "extends": ["@samuelmeuli/eslint-config"]
+       }
+     }
+     ```
 
-```yml
-root: true
+   - JavaScript with React:
 
-extends:
-  - "@samuelmeuli/eslint-config/react"
-  # OR
-  - "@samuelmeuli/eslint-config/react-typescript"
+     ```json
+     {
+       "eslintConfig": {
+         "root": true,
+         "extends": ["@samuelmeuli/eslint-config/react"]
+       }
+     }
+     ```
 
-  # If you are using Prettier, also add the following line:
-  - "prettier"
-  # If you are using TypeScript and Prettier, also add the following line:
-  - "prettier/@typescript-eslint"
-```
+   - TypeScript:
 
-3. Add a linting script to your `package.json` file:
+     ```json
+     {
+       "eslintConfig": {
+         "root": true,
+         "extends": ["@samuelmeuli/eslint-config/typescript"]
+       }
+     }
+     ```
 
-```js
-{
-  "scripts": {
-    "lint:js": "eslint --ext .js,.jsx --fix --max-warnings 0 .",
-    // OR
-    "lint:ts": "eslint --ext .ts,.tsx --fix --max-warnings 0 ."
-  }
-}
-```
+   - TypeScript with React:
+
+     ```json
+     {
+       "eslintConfig": {
+         "root": true,
+         "extends": ["@samuelmeuli/eslint-config/typescript-react"]
+       }
+     }
+     ```
+
+3. **Add a linting script to your `package.json` file:**
+
+   - JavaScript:
+
+     ```json
+     {
+       "scripts": {
+         "lint": "eslint --fix --max-warnings 0 ."
+       }
+     }
+     ```
+
+   - JavaScript with React:
+
+     ```json
+     {
+       "scripts": {
+         "lint": "eslint --ext .js,.jsx --fix --max-warnings 0 ."
+       }
+     }
+     ```
+
+   - TypeScript:
+
+     ```json
+     {
+       "scripts": {
+         "lint": "eslint --ext .ts --fix --max-warnings 0 ."
+       }
+     }
+     ```
+
+   - TypeScript with React:
+
+     ```json
+     {
+       "scripts": {
+         "lint": "eslint --ext .ts,.tsx --fix --max-warnings 0 ."
+       }
+     }
+     ```

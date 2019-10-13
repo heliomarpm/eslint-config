@@ -1,20 +1,25 @@
 const baseRules = require("./rules/base");
-const reactRules = require("./rules/react");
+const typescriptRules = require("./rules/typescript");
+
+const parser = "@typescript-eslint/parser";
 
 const configs = [
-	"airbnb",
+	"airbnb-base",
+	"plugin:@typescript-eslint/recommended",
+	"plugin:import/typescript",
 	// Disable rules which might conflict with Prettier
 	"prettier",
-	"prettier/react",
+	"prettier/@typescript-eslint",
 ];
 
 const plugins = ["simple-import-sort"];
 
 module.exports = {
+	parser,
 	extends: configs,
 	plugins,
 	rules: {
 		...baseRules,
-		...reactRules,
+		...typescriptRules,
 	},
 };
