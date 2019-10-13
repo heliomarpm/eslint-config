@@ -1,3 +1,10 @@
+/*
+	Rules covered by eslint-config-prettier:
+
+	"react/jsx-indent": ["error", "tab"],
+	"react/jsx-indent-props": ["error", "tab"],
+*/
+
 module.exports = {
 	// Allow named export in files with a single export
 	"import/prefer-default-export": "off",
@@ -11,8 +18,6 @@ module.exports = {
 	],
 
 	// Tab indentation
-	"react/jsx-indent": ["error", "tab"],
-	"react/jsx-indent-props": ["error", "tab"],
 	"react/jsx-one-expression-per-line": "off",
 
 	// Require <button> to have "type" attribute (prevents unintended form submissions)

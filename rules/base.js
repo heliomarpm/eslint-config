@@ -1,20 +1,48 @@
-module.exports = {
+/*
+	Rules covered by eslint-config-prettier:
+
 	// Tab indentation
 	indent: ["error", "tab"],
 	"no-tabs": "off",
+
+	// Object spacing
+	"object-curly-spacing": [
+		"error",
+		"always",
+		{
+			objectsInObjects: false,
+		}
+	},
+*/
+
+module.exports = {
+	// Enforces no braces where they can be omitted
+	// Source: https://github.com/airbnb/javascript/blob/64b965efe0355c8290996ff5a675cd8fb30bf843/packages/eslint-config-airbnb-base/rules/es6.js#L15-L20
+	// Re-enabled because turned off by eslint-config-prettier
+	"arrow-body-style": [
+		"error",
+		"as-needed",
+		{
+			requireReturnForObjectLiteral: false,
+		},
+	],
+
+	// Suggest using arrow functions as callbacks
+	// Source: https://github.com/airbnb/javascript/blob/64b965efe0355c8290996ff5a675cd8fb30bf843/packages/eslint-config-airbnb-base/rules/es6.js#L100-L104
+	// Re-enabled because turned off by eslint-config-prettier
+	"prefer-arrow-callback": [
+		"error",
+		{
+			allowNamedFunctions: false,
+			allowUnboundThis: true,
+		},
+	],
 
 	// Require curly braces even if a block contains only a single statement
 	curly: ["error", "all"],
 
 	// Object spacing
 	"object-curly-newline": "off",
-	"object-curly-spacing": [
-		"error",
-		"always",
-		{
-			objectsInObjects: false,
-		},
-	],
 
 	// Disallow console statements (except for console.error)
 	"no-console": [
