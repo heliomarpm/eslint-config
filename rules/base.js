@@ -3,6 +3,9 @@ module.exports = {
 	indent: ["error", "tab"],
 	"no-tabs": "off",
 
+	// Require curly braces even if a block contains only a single statement
+	curly: ["error", "all"],
+
 	// Object spacing
 	"object-curly-newline": "off",
 	"object-curly-spacing": [
