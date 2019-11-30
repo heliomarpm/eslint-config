@@ -24,6 +24,7 @@ module.exports = {
 		{
 			// Disable errors for long code lines (handled by Prettier)
 			code: 100000, // High value because the rule cannot be enabled for comments only
+			tabWidth: 2,
 
 			// Enable errors for long comment lines
 			comments: 100,
