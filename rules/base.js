@@ -16,6 +16,27 @@
 */
 
 module.exports = {
+	// Enforce max line length for comments
+	// TODO: Remove rule once Prettier can wrap comments
+	// See https://github.com/prettier/prettier/issues/265
+	"max-len": [
+		"error",
+		{
+			// Disable errors for long code lines (handled by Prettier)
+			code: 100000, // High value because the rule cannot be enabled for comments only
+
+			// Enable errors for long comment lines
+			comments: 100,
+			ignoreComments: false,
+			ignoreTrailingComments: false,
+
+			ignoreRegExpLiterals: true,
+			ignoreStrings: true,
+			ignoreTemplateLiterals: true,
+			ignoreUrls: true,
+		},
+	],
+
 	// Enforces no braces where they can be omitted
 	// Source: https://github.com/airbnb/javascript/blob/64b965efe0355c8290996ff5a675cd8fb30bf843/packages/eslint-config-airbnb-base/rules/es6.js#L15-L20
 	// Re-enabled because turned off by eslint-config-prettier
