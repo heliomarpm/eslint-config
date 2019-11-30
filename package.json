@@ -24,7 +24,7 @@
 	],
 	"scripts": {
 		"format": "prettier --write",
-		"release": "np"
+		"release": "np --no-tests"
 	},
 	"dependencies": {},
 	"peerDependencies": {
