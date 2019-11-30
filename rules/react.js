@@ -6,9 +6,6 @@
 */
 
 module.exports = {
-	// Allow named export in files with a single export
-	"import/prefer-default-export": "off",
-
 	// File extension
 	"react/jsx-filename-extension": [
 		"error",
