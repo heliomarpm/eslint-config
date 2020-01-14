@@ -97,7 +97,17 @@ module.exports = {
 
 	// Sort imports alphabetically within groups
 	"sort-imports": "off",
-	"import/order": "off",
+	"import/order": [
+		"error",
+		{
+			alphabetize: {
+				caseInsensitive: true,
+				order: "asc",
+			},
+			groups: ["builtin", ["external", "internal"], ["parent", "sibling", "index"]],
+			"newlines-between": "always",
+		},
+	],
 
 	// Allow named export in files with a single export
 	"import/prefer-default-export": "off",

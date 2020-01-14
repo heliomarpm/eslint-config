@@ -1,4 +1,8 @@
 module.exports = {
+	// File extension checks in imports: Use `eslint-plugin-import`'s default configuration for
+	// TypeScript compatibility (overridden by the Airbnb configs)
+	"import/extensions": ["error", "never"],
+
 	// Allow `@tsignore`
 	"@typescript-eslint/ban-ts-ignore": "off",
 
