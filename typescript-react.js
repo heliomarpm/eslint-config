@@ -14,12 +14,9 @@ const configs = [
 	"prettier/react",
 ];
 
-const plugins = ["simple-import-sort"];
-
 module.exports = {
 	parser,
 	extends: configs,
-	plugins,
 	rules: {
 		...baseRules,
 		...reactRules,

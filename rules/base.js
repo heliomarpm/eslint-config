@@ -98,7 +98,6 @@ module.exports = {
 	// Sort imports alphabetically within groups
 	"sort-imports": "off",
 	"import/order": "off",
-	"simple-import-sort/sort": "error",
 
 	// Allow named export in files with a single export
 	"import/prefer-default-export": "off",

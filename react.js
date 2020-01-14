@@ -8,11 +8,8 @@ const configs = [
 	"prettier/react",
 ];
 
-const plugins = ["simple-import-sort"];
-
 module.exports = {
 	extends: configs,
-	plugins,
 	rules: {
 		...baseRules,
 		...reactRules,

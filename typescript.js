@@ -12,12 +12,9 @@ const configs = [
 	"prettier/@typescript-eslint",
 ];
 
-const plugins = ["simple-import-sort"];
-
 module.exports = {
 	parser,
 	extends: configs,
-	plugins,
 	rules: {
 		...baseRules,
 		...typescriptRules,

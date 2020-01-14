@@ -6,10 +6,7 @@ const configs = [
 	"prettier",
 ];
 
-const plugins = ["simple-import-sort"];
-
 module.exports = {
 	extends: configs,
-	plugins,
 	rules: baseRules,
 };

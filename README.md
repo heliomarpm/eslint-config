@@ -22,7 +22,6 @@ They are designed to be used together with [Prettier](https://github.com/prettie
      ```sh
      yarn add --dev @samuelmeuli/eslint-config \
        eslint-config-prettier \
-       eslint-plugin-simple-import-sort \
        && npx install-peerdeps --dev eslint-config-airbnb-base
      ```
 
@@ -31,7 +30,6 @@ They are designed to be used together with [Prettier](https://github.com/prettie
      ```sh
      yarn add --dev @samuelmeuli/eslint-config \
        eslint-config-prettier \
-       eslint-plugin-simple-import-sort \
        && npx install-peerdeps --dev eslint-config-airbnb
      ```
 
@@ -42,7 +40,6 @@ They are designed to be used together with [Prettier](https://github.com/prettie
        eslint-config-prettier \
        @typescript-eslint/eslint-plugin \
        @typescript-eslint/parser \
-       eslint-plugin-simple-import-sort \
        && npx install-peerdeps --dev eslint-config-airbnb-base
      ```
 
@@ -53,7 +50,6 @@ They are designed to be used together with [Prettier](https://github.com/prettie
        eslint-config-prettier \
        @typescript-eslint/eslint-plugin \
        @typescript-eslint/parser \
-       eslint-plugin-simple-import-sort \
        && npx install-peerdeps --dev eslint-config-airbnb
      ```
 
@@ -63,10 +59,10 @@ They are designed to be used together with [Prettier](https://github.com/prettie
 
      ```json
      {
-       "eslintConfig": {
-         "root": true,
-         "extends": ["@samuelmeuli/eslint-config"]
-       }
+     	"eslintConfig": {
+     		"root": true,
+     		"extends": ["@samuelmeuli/eslint-config"]
+     	}
      }
      ```
 
@@ -74,10 +70,10 @@ They are designed to be used together with [Prettier](https://github.com/prettie
 
      ```json
      {
-       "eslintConfig": {
-         "root": true,
-         "extends": ["@samuelmeuli/eslint-config/react"]
-       }
+     	"eslintConfig": {
+     		"root": true,
+     		"extends": ["@samuelmeuli/eslint-config/react"]
+     	}
      }
      ```
 
@@ -85,10 +81,10 @@ They are designed to be used together with [Prettier](https://github.com/prettie
 
      ```json
      {
-       "eslintConfig": {
-         "root": true,
-         "extends": ["@samuelmeuli/eslint-config/typescript"]
-       }
+     	"eslintConfig": {
+     		"root": true,
+     		"extends": ["@samuelmeuli/eslint-config/typescript"]
+     	}
      }
      ```
 
@@ -96,10 +92,10 @@ They are designed to be used together with [Prettier](https://github.com/prettie
 
      ```json
      {
-       "eslintConfig": {
-         "root": true,
-         "extends": ["@samuelmeuli/eslint-config/typescript-react"]
-       }
+     	"eslintConfig": {
+     		"root": true,
+     		"extends": ["@samuelmeuli/eslint-config/typescript-react"]
+     	}
      }
      ```
 
@@ -109,9 +105,9 @@ They are designed to be used together with [Prettier](https://github.com/prettie
 
      ```json
      {
-       "scripts": {
-         "lint": "eslint --fix --max-warnings 0 ."
-       }
+     	"scripts": {
+     		"lint": "eslint --fix --max-warnings 0 ."
+     	}
      }
      ```
 
@@ -119,9 +115,9 @@ They are designed to be used together with [Prettier](https://github.com/prettie
 
      ```json
      {
-       "scripts": {
-         "lint": "eslint --ext .js,.jsx --fix --max-warnings 0 ."
-       }
+     	"scripts": {
+     		"lint": "eslint --ext .js,.jsx --fix --max-warnings 0 ."
+     	}
      }
      ```
 
@@ -129,9 +125,9 @@ They are designed to be used together with [Prettier](https://github.com/prettie
 
      ```json
      {
-       "scripts": {
-         "lint": "eslint --ext .ts --fix --max-warnings 0 ."
-       }
+     	"scripts": {
+     		"lint": "eslint --ext .ts --fix --max-warnings 0 ."
+     	}
      }
      ```
 
@@ -139,8 +135,8 @@ They are designed to be used together with [Prettier](https://github.com/prettie
 
      ```json
      {
-       "scripts": {
-         "lint": "eslint --ext .ts,.tsx --fix --max-warnings 0 ."
-       }
+     	"scripts": {
+     		"lint": "eslint --ext .ts,.tsx --fix --max-warnings 0 ."
+     	}
      }
      ```
