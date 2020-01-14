@@ -31,13 +31,15 @@
 		"eslint": "*"
 	},
 	"devDependencies": {
-		"husky": "^3.1.0",
+		"@samuelmeuli/prettier-config": "^1.0.0",
+		"husky": "^4.0.7",
 		"lint-staged": "^9.5.0",
 		"np": "^5.2.1",
 		"prettier": "^1.19.1"
 	},
+	"prettier": "@samuelmeuli/prettier-config",
 	"lint-staged": {
-		"*.{js,json,md,yml}": [
+		"*.{css,html,js,json,jsx,md,sass,scss,ts,tsx,vue,yaml,yml}": [
 			"yarn format",
 			"git add"
 		]
