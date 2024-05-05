@@ -15,7 +15,7 @@
 	},
 */
 
-module.exports = {
+export default {
 	// Enforce max line length for comments
 	// TODO: Remove rule once Prettier can wrap comments
 	// See https://github.com/prettier/prettier/issues/265

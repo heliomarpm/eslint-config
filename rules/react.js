@@ -5,7 +5,7 @@
 	"react/jsx-indent-props": ["error", "tab"],
 */
 
-module.exports = {
+export default {
 	// File extension
 	"react/jsx-filename-extension": [
 		"error",

@@ -1,4 +1,4 @@
-# eslint-config
+# Personal ESLint configurations
 
 These are my personal configurations for [ESLint](https://github.com/eslint/eslint). They are based on [Airbnb's ESLint configurations](https://github.com/airbnb/javascript).
 
@@ -17,43 +17,38 @@ They are designed to be used together with [Prettier](https://github.com/prettie
 
 1. **Install the required packages:**
 
-   - JavaScript:
+      ```sh
+      yarn add --dev @heliomarpm/eslint-config eslint-config-prettier
 
-     ```sh
-     yarn add --dev @samuelmeuli/eslint-config \
-       eslint-config-prettier \
-       && npx install-peerdeps --dev eslint-config-airbnb-base
-     ```
+      # or
 
-   - JavaScript with React:
+      npm install --save-dev @heliomarpm/eslint-config eslint-config-prettier
+      ```
 
-     ```sh
-     yarn add --dev @samuelmeuli/eslint-config \
-       eslint-config-prettier \
-       && npx install-peerdeps --dev eslint-config-airbnb
-     ```
+    * for TypeScript, install the following packages:
 
-   - TypeScript:
+      ```sh
+      yarn add --dev @typescript-eslint/eslint-plugin @typescript-eslint/parser
 
-     ```sh
-     yarn add --dev @samuelmeuli/eslint-config \
-       eslint-config-prettier \
-       @typescript-eslint/eslint-plugin \
-       @typescript-eslint/parser \
-       && npx install-peerdeps --dev eslint-config-airbnb-base
-     ```
+      # or
 
-   - TypeScript with React:
+      npm install --save-dev @typescript-eslint/eslint-plugin @typescript-eslint/parser
+      ```
 
-     ```sh
-     yarn add --dev @samuelmeuli/eslint-config \
-       eslint-config-prettier \
-       @typescript-eslint/eslint-plugin \
-       @typescript-eslint/parser \
-       && npx install-peerdeps --dev eslint-config-airbnb
-     ```
+    * for Projects withless React, install the following packages:
 
-2. **Create the following entry in your `package.json` file:**
+      ```sh
+      npx install-peerdeps --dev eslint-config-airbnb-base
+      ```
+
+    * for Project with React, install the following packages:
+
+      ```sh
+      npx install-peerdeps --dev eslint-config-airbnb
+      ```
+
+
+1. **Create the following entry in your `package.json` file:**
 
    - JavaScript:
 
@@ -61,7 +56,7 @@ They are designed to be used together with [Prettier](https://github.com/prettie
      {
      	"eslintConfig": {
      		"root": true,
-     		"extends": ["@samuelmeuli/eslint-config"]
+     		"extends": ["@heliomarpm/eslint-config"]
      	}
      }
      ```
@@ -72,7 +67,7 @@ They are designed to be used together with [Prettier](https://github.com/prettie
      {
      	"eslintConfig": {
      		"root": true,
-     		"extends": ["@samuelmeuli/eslint-config/react"]
+     		"extends": ["@heliomarpm/eslint-config/react"]
      	}
      }
      ```
@@ -83,7 +78,7 @@ They are designed to be used together with [Prettier](https://github.com/prettie
      {
      	"eslintConfig": {
      		"root": true,
-     		"extends": ["@samuelmeuli/eslint-config/typescript"]
+     		"extends": ["@heliomarpm/eslint-config/typescript"]
      	}
      }
      ```
@@ -94,12 +89,12 @@ They are designed to be used together with [Prettier](https://github.com/prettie
      {
      	"eslintConfig": {
      		"root": true,
-     		"extends": ["@samuelmeuli/eslint-config/typescript-react"]
+     		"extends": ["@heliomarpm/eslint-config/typescript-react"]
      	}
      }
      ```
 
-3. **Add a linting script to your `package.json` file:**
+2. **Add a linting script to your `package.json` file:**
 
    - JavaScript:
 

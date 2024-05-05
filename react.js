@@ -1,5 +1,5 @@
-const baseRules = require("./rules/base");
-const reactRules = require("./rules/react");
+import baseRules from "./rules/base";
+import reactRules from "./rules/react";
 
 const configs = [
 	"airbnb",
@@ -8,10 +8,11 @@ const configs = [
 	"prettier/react",
 ];
 
-module.exports = {
-	extends: configs,
-	rules: {
-		...baseRules,
-		...reactRules,
-	},
+export {
+	configs as extends,
+}
+
+export const rules = {
+	...baseRules,
+	...reactRules,
 };

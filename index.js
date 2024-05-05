@@ -1,4 +1,4 @@
-const baseRules = require("./rules/base");
+import baseRules from "./rules/base";
 
 const configs = [
 	"airbnb-base",
@@ -6,7 +6,7 @@ const configs = [
 	"prettier",
 ];
 
-module.exports = {
-	extends: configs,
-	rules: baseRules,
-};
+export {
+	configs as extends,
+	baseRules as rules,
+}

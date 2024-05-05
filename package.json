@@ -1,19 +1,13 @@
 {
-	"name": "@samuelmeuli/eslint-config",
-	"version": "6.0.0",
+	"name": "@heliomarpm/eslint-config",
+	"version": "0.1.0",
 	"description": "My ESLint configuration",
-	"keywords": [
-		"eslint",
-		"config",
-		"eslint-config",
-		"lint"
-	],
 	"author": {
-		"name": "Samuel Meuli",
-		"email": "me@samuelmeuli.com",
-		"url": "https://samuelmeuli.com"
+		"name": "Heliomar P. Marques",
+		"email": "heliomarpm@proton.me",
+		"url": "https://navto.me/heliomarpm"
 	},
-	"repository": "github:samuelmeuli/eslint-config",
+	"repository": "github:heliomarpm/eslint-config",
 	"license": "MIT",
 	"files": [
 		"rules/",
@@ -22,22 +16,27 @@
 		"typescript.js",
 		"typescript-react.js"
 	],
+	"keywords": [
+		"eslint",
+		"config",
+		"eslint-config",
+		"lint"
+	],
 	"scripts": {
 		"format": "prettier --write",
 		"release": "np --no-tests"
 	},
-	"dependencies": {},
 	"peerDependencies": {
-		"eslint": "*"
+		"eslint": "9.2.0"
 	},
 	"devDependencies": {
-		"@samuelmeuli/prettier-config": "^1.0.0",
-		"husky": "^4.0.7",
-		"lint-staged": "^9.5.0",
-		"np": "^5.2.1",
-		"prettier": "^1.19.1"
+		"@heliomarpm/prettier-config": "github:heliomarpm/prettier-config",
+		"husky": "^9.0.11",
+		"lint-staged": "^15.2.2",
+		"np": "^10.0.5",
+		"prettier": "^3.2.5"
 	},
-	"prettier": "@samuelmeuli/prettier-config",
+	"prettier": "github:heliomarpm/prettier-config",
 	"lint-staged": {
 		"*.{css,html,js,json,jsx,md,sass,scss,ts,tsx,vue,yaml,yml}": [
 			"yarn format",
